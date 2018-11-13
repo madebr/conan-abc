@@ -1,6 +1,6 @@
 [![Download](https://api.bintray.com/packages/bincrafters/public-conan/abc%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/abc%3Abincrafters/_latestVersion)
-[![Build Status](https://travis-ci.org/bincrafters/conan-abc.svg?branch=stable%2F455e0ba)](https://travis-ci.org/bincrafters/conan-abc)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-abc?branch=stable%2F455e0ba&svg=true)](https://ci.appveyor.com/project/bincrafters/conan-abc)
+[![Build Status](https://travis-ci.org/bincrafters/conan-abc.svg?branch=stable%2F20181112)](https://travis-ci.org/bincrafters/conan-abc)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-abc?branch=stable%2F20181112&svg=true)](https://ci.appveyor.com/project/bincrafters/conan-abc)
 
 [Conan.io](https://conan.io) package recipe for [*abc*](http://www.eecs.berkeley.edu/~alanmi/abc/abc.htm).
 
@@ -12,14 +12,14 @@ The packages generated with this **conanfile** can be found on [Bintray](https:/
 
 ### Basic setup
 
-    $ conan install abc/455e0ba@bincrafters/stable
+    $ conan install abc/20181112@bincrafters/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    abc/455e0ba@bincrafters/stable
+    abc/20181112@bincrafters/stable
 
     [generators]
     cmake
@@ -46,6 +46,7 @@ The following command both runs all the steps of the conan file, and publishes t
 | ------------- |:----------------- |:------------:|
 | shared      | False |  [True, False] |
 | fPIC      | True |  [True, False] |
+| threads      | True |  [True, False] |
 
 ## Add Remote
 
@@ -53,7 +54,7 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Upload
 
-    $ conan upload abc/455e0ba@bincrafters/stable --all -r bincrafters
+    $ conan upload abc/20181112@bincrafters/stable --all -r bincrafters
 
 
 ## Conan Recipe License
@@ -61,4 +62,4 @@ The following command both runs all the steps of the conan file, and publishes t
 NOTE: The conan recipe license applies only to the files of this recipe, which can be used to build and package abc.
 It does *not* in any way apply or is related to the actual software being packaged.
 
-[MIT](git@github.com:bincrafters/conan-abc.git/blob/testing/455e0ba/LICENSE.md)
+[MIT](git@github.com:bincrafters/conan-abc.git/blob/20181112/LICENSE)
